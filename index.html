@@ -3,72 +3,133 @@
 <head>
     <meta charset="utf-8" />
     <title>Main Site - Testing</title>
+    <!--boostrap css including-->
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
-    <style rel="stylesheet" type="text/css">
-    </style>
 </head>
 <body>
 
-    <button onclick="run()">JS RUN</button>
-    <div>
-        <u>My first <strong>HTML</strong> website!</u>
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5 mt-5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container text-center mt-5 mb-5">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    Column1 dfwerwewrwerwerwerwerwerwerwer
+                </div>
+                <div class="col-12 col-lg-3">
+                    Column2 werwerwrwerwerwerwerwerwerwwer
+                </div>
+                <div class="col-12 col-lg-3">
+                    Column3 ewrwrwerwerwerwerwerwerwerwerwer
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-outline-primary" onclick="run()">JS RUN</button>
+        <div>
+            <u>My first <strong>HTML</strong> website!</u>
+
+            <br />
+            <h1 id="main-header">HTML!</h1>
+            <br /><br />
+        </div>
+
+        <table class="table table-success table-striped-columns mt-5 md-5">
+            <tr>
+                <td align="center" bgcolor="lightgrey">Title</td>
+                <td align="center" bgcolor="lightgrey">Description</td>
+                <td align="center" bgcolor="lightgrey">Value</td>
+            </tr>
+            <tr>
+                <td align="center">Title 2</td>
+                <td align="center">Desc 2</td>
+                <td align="center">100$</td>
+            </tr>
+        </table>
+
+
+        <h2 class="title-one">Title 3</h2>
+
+        <a class="link-japko" href="https://www.google.com/search?q=google&rlz=1C1GCEU_plPL1097PL1125&oq=google&gs_lcrp=EgZjaHJvbWUqEAgAEAAYgwEY4wIYsQMYgAQyEAgAEAAYgwEY4wIYsQMYgAQyEwgBEC4YgwEYxwEYsQMY0QMYgAQyEAgCEAAYgwEYsQMYyQMYgAQyDQgDEAAYgwEYsQMYgAQyDQgEEAAYgwEYsQMYgAQyDQgFEAAYgwEYsQMYgAQyBggGEEUYPDIGCAcQRRg80gEHNTgxajBqN6gCCLACAQ&sourceid=chrome&ie=UTF-8">Google</a>
 
         <br />
-        <h1 id="main-header">HTML!</h1>
-        <br /><br />
+
+        <img src="./jbl.jpg" alt="Here should be picture of apple but something went wrong!" />
+
+        <ul class="two">
+            <li style="background-color:blue">Point 1</li>
+            <li>Point 2</li>
+            <li>Point 3</li>
+            <li>Point 4</li>
+        </ul>
+
+        <ul class="one">
+            <li style="background-color:blue">Point 1</li>
+            <li>Point 2</li>
+            <li>Point 3</li>
+            <li>Point 4</li>
+        </ul>
+
+        <button id="butt">Save</button>
+        <h3 class="mt-5 mb-3">Fill a form</h3>
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-outline-primary">Submit</button>
+        </form>
     </div>
 
-    <table border="1" cellpadding="5" cellspacing="1">
-        <tr>
-            <td align="center" bgcolor="lightgrey">Title</td>
-            <td align="center" bgcolor="lightgrey">Description</td>
-            <td align="center" bgcolor="lightgrey">Value</td>
-        </tr>
-        <tr>
-            <td align="center">Title 2</td>
-            <td align="center">Desc 2</td>
-            <td align="center">100$</td>
-        </tr>
-    </table>
 
-    <h2 class="title-one">Title 1</h2>
-
-    <h3 class="title-one">Title 3</h3>
-
-    <a class="link-japko" href="https://www.google.com/search?q=google&rlz=1C1GCEU_plPL1097PL1125&oq=google&gs_lcrp=EgZjaHJvbWUqEAgAEAAYgwEY4wIYsQMYgAQyEAgAEAAYgwEY4wIYsQMYgAQyEwgBEC4YgwEYxwEYsQMY0QMYgAQyEAgCEAAYgwEYsQMYyQMYgAQyDQgDEAAYgwEYsQMYgAQyDQgEEAAYgwEYsQMYgAQyDQgFEAAYgwEYsQMYgAQyBggGEEUYPDIGCAcQRRg80gEHNTgxajBqN6gCCLACAQ&sourceid=chrome&ie=UTF-8">Google</a>
-
-    <br />
-
-    <img src="./jbl.jpg" alt="Here should be picture of apple but something went wrong!" />
-
-    <ul class="two">
-        <li style="background-color:blue">Point 1</li>
-        <li>Point 2</li>
-        <li>Point 3</li>
-        <li>Point 4</li>
-    </ul>
-
-    <ul class="one">
-        <li style="background-color:blue">Point 1</li>
-        <li>Point 2</li>
-        <li>Point 3</li>
-        <li>Point 4</li>
-    </ul>
-
-    <button id="butt">Save</button>
-    <form action="/" method="post">
-    <input type="text" name="name" value="Name" />
-    <input type="checkbox" name="checkbox" value="" />
-    <input type="file" name="file" value="" />
-    <input type="color" name="color" value="" />
-    <input type="date" name="date" value="" />
-    <input type="email" name="email" value="" />
-    <input type="password" name="password" value="" />
-    <input type="radio" name="radio" value="" />
-
-    <button id="butt">Save</button>
-    </form>
     <script src="./js/jQuery.js" type="text/javascript"></script>
+    <script src="./js/bootstrap.js" type="text/javascript"></script>
     <script src="./js/script.js" type="text/javascript"></script>
 </body>
 </html>
