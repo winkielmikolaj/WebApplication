@@ -1,0 +1,17 @@
+div {
+    background-color: red;
+    font-size: 15px;
+}
+
+.title-one {
+    text-align: right;
+}
+
+#butt {
+    font-size: 25px;
+    background-color: rebeccapurple;
+}
+
+ul {
+    font-weight: bold;
+}

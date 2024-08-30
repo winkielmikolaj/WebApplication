@@ -3,16 +3,20 @@
 <head>
     <meta charset="utf-8" />
     <title>Main Site - Testing</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <style rel="stylesheet" type="text/css">
+        
+        
+    </style>
 </head>
 <body>
-    <u>My first <strong>HTML</strong> website!</u>
+    <div>
+        <u>My first <strong>HTML</strong> website!</u>
 
-    <br />
-    <h1>HTML!</h1>
-
-
-
-    <br /><br />
+        <br />
+        <h1>HTML!</h1>
+        <br /><br />
+    </div>
 
     <table border="1" cellpadding="5" cellspacing="1">
         <tr>
@@ -27,7 +31,9 @@
         </tr>
     </table>
 
-    <h2>Title 1</h2>
+    <h2 class="title-one">Title 1</h2>
+
+    <h3 class="title-one">Title 3</h3>
 
     <a href="https://www.google.com/search?q=google&rlz=1C1GCEU_plPL1097PL1125&oq=google&gs_lcrp=EgZjaHJvbWUqEAgAEAAYgwEY4wIYsQMYgAQyEAgAEAAYgwEY4wIYsQMYgAQyEwgBEC4YgwEYxwEYsQMY0QMYgAQyEAgCEAAYgwEYsQMYyQMYgAQyDQgDEAAYgwEYsQMYgAQyDQgEEAAYgwEYsQMYgAQyDQgFEAAYgwEYsQMYgAQyBggGEEUYPDIGCAcQRRg80gEHNTgxajBqN6gCCLACAQ&sourceid=chrome&ie=UTF-8">Google</a>
 
@@ -35,14 +41,21 @@
 
     <img src="./jbl.jpg" alt="Here should be picture of apple but something went wrong!" />
 
-    <ul>
-        <li>Point 1</li>
+    <ul class="two">
+        <li style="background-color:blue">Point 1</li>
         <li>Point 2</li>
         <li>Point 3</li>
         <li>Point 4</li>
     </ul>
 
-    <button>Save</button>
+    <ul class="one">
+        <li style="background-color:blue">Point 1</li>
+        <li>Point 2</li>
+        <li>Point 3</li>
+        <li>Point 4</li>
+    </ul>
+
+    <button id="butt">Save</button>
 
     <input type="text" name="name" value="Name" />
     <input type="checkbox" name="checkbox" value="" />
@@ -53,7 +66,7 @@
     <input type="password" name="password" value="" />
     <input type="radio" name="radio" value="" />
 
-    <button>Save</button>
+    <button id="butt">Save</button>
 </body>
 </html>
 
